@@ -1,0 +1,209 @@
+2016-12-21 12:42:59,430 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2016-12-21 12:42:59,450 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2016-12-21 12:42:59,452 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2016-12-21 12:42:59,618 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'delete_instances']
+2016-12-21 12:42:59,624 DEBUG    root            Running gcloud.compute.instance-groups.managed.delete-instances with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.compute.instance-groups.managed.delete-instances', usage=None, description='Delete instances managed by managed instance group.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, authority_selector=None, authorization_token_file=None, calliope_command=<googlecloudsdk.calliope.backend.Command object at 0x7f094d201d90>, command_path=['gcloud', 'compute', 'instance-groups', 'managed', 'delete-instances'], configuration=None, credential_file_override=None, document=None, flatten=None, format=None, h=None, help=None, http_timeout=None, instances=['instance-group-worker-v5-rtdn'], log_http=None, name='instance-group-worker-v5', project=None, quiet=None, region=None, trace_email=None, trace_log=None, trace_token=None, user_output_enabled=None, verbosity='warning', version=None, zone='europe-west1-c').
+2016-12-21 12:42:59,785 DEBUG    root            Starting batch request...
+2016-12-21 12:42:59,785 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.InstanceGroupManagersService object at 0x7f094ce86210>, 'DeleteInstances', <ComputeInstanceGroupManagersDeleteInstancesRequest
+ instanceGroupManager: 'instance-group-worker-v5'
+ instanceGroupManagersDeleteInstancesRequest: <InstanceGroupManagersDeleteInstancesRequest
+ instances: ['https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c/instances/instance-group-worker-v5-rtdn']>
+ project: 'corded-keel-151213'
+ zone: 'europe-west1-c'>)
+2016-12-21 12:42:59,786 DEBUG    root            Making batch request...
+2016-12-21 12:43:00,291 DEBUG    root            Batch request done; responses [<Operation
+ endTime: u'2016-12-21T04:43:00.106-08:00'
+ id: 8832250786474346044
+ insertTime: u'2016-12-21T04:43:00.104-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1482324179834-5442a7e2e5491-24c136a0-0f5d7a53'
+ operationType: u'compute.instanceGroupManagers.deleteInstances'
+ progress: 100
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c/operations/operation-1482324179834-5442a7e2e5491-24c136a0-0f5d7a53'
+ startTime: u'2016-12-21T04:43:00.106-08:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 5138507795845868337
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c/instanceGroupManagers/instance-group-worker-v5'
+ user: u'304034796277-compute@developer.gserviceaccount.com'
+ warnings: []
+ zone: u'https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c'>]
+2016-12-21 12:43:00,291 DEBUG    root            Operations to inspect: [<Operation
+ endTime: u'2016-12-21T04:43:00.106-08:00'
+ id: 8832250786474346044
+ insertTime: u'2016-12-21T04:43:00.104-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1482324179834-5442a7e2e5491-24c136a0-0f5d7a53'
+ operationType: u'compute.instanceGroupManagers.deleteInstances'
+ progress: 100
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c/operations/operation-1482324179834-5442a7e2e5491-24c136a0-0f5d7a53'
+ startTime: u'2016-12-21T04:43:00.106-08:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 5138507795845868337
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c/instanceGroupManagers/instance-group-worker-v5'
+ user: u'304034796277-compute@developer.gserviceaccount.com'
+ warnings: []
+ zone: u'https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c'>]
+2016-12-21 12:43:00,292 INFO     ___FILE_ONLY___ Updated [https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c/instanceGroupManagers/instance-group-worker-v5].
+
+2016-12-21 12:43:00,292 DEBUG    root            Starting batch request...
+2016-12-21 12:43:00,292 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.InstanceGroupManagersService object at 0x7f094ce86210>, 'Get', <ComputeInstanceGroupManagersGetRequest
+ instanceGroupManager: u'instance-group-worker-v5'
+ project: 'corded-keel-151213'
+ zone: u'europe-west1-c'>)
+2016-12-21 12:43:00,292 DEBUG    root            Making batch request...
+2016-12-21 12:43:00,683 DEBUG    root            Batch request done; responses [<InstanceGroupManager
+ baseInstanceName: u'instance-group-worker-v5'
+ creationTimestamp: u'2016-12-21T02:13:50.478-08:00'
+ currentActions: <InstanceGroupManagerActionsSummary
+ abandoning: 0
+ creating: 0
+ creatingWithoutRetries: 0
+ deleting: 1
+ none: 1
+ recreating: 0
+ refreshing: 0
+ restarting: 0>
+ fingerprint: '\x10\x8cj\x94\xdd\xee\xc3\x81'
+ id: 5138507795845868337
+ instanceGroup: u'https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c/instanceGroups/instance-group-worker-v5'
+ instanceTemplate: u'https://www.googleapis.com/compute/v1/projects/corded-keel-151213/global/instanceTemplates/instance-template-worker-v5'
+ kind: u'compute#instanceGroupManager'
+ name: u'instance-group-worker-v5'
+ namedPorts: []
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c/instanceGroupManagers/instance-group-worker-v5'
+ targetPools: []
+ targetSize: 1
+ zone: u'https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c'>]
+2016-12-21 12:43:00,704 INFO     root            Display format "default".
+2016-12-21 12:43:00,708 INFO     ___FILE_ONLY___ ---
+2016-12-21 12:43:00,708 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,708 INFO     ___FILE_ONLY___ baseInstanceName
+2016-12-21 12:43:00,708 INFO     ___FILE_ONLY___ :
+2016-12-21 12:43:00,708 INFO     ___FILE_ONLY___  
+2016-12-21 12:43:00,708 INFO     ___FILE_ONLY___ instance-group-worker-v5
+2016-12-21 12:43:00,708 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,709 INFO     ___FILE_ONLY___ creationTimestamp
+2016-12-21 12:43:00,709 INFO     ___FILE_ONLY___ :
+2016-12-21 12:43:00,709 INFO     ___FILE_ONLY___  '
+2016-12-21 12:43:00,709 INFO     ___FILE_ONLY___ 2016-12-21T02:13:50.478-08:00
+2016-12-21 12:43:00,709 INFO     ___FILE_ONLY___ '
+2016-12-21 12:43:00,709 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,709 INFO     ___FILE_ONLY___ currentActions
+2016-12-21 12:43:00,709 INFO     ___FILE_ONLY___ :
+2016-12-21 12:43:00,709 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,709 INFO     ___FILE_ONLY___   
+2016-12-21 12:43:00,710 INFO     ___FILE_ONLY___ abandoning
+2016-12-21 12:43:00,710 INFO     ___FILE_ONLY___ :
+2016-12-21 12:43:00,710 INFO     ___FILE_ONLY___  
+2016-12-21 12:43:00,710 INFO     ___FILE_ONLY___ 0
+2016-12-21 12:43:00,710 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,710 INFO     ___FILE_ONLY___   
+2016-12-21 12:43:00,710 INFO     ___FILE_ONLY___ creating
+2016-12-21 12:43:00,710 INFO     ___FILE_ONLY___ :
+2016-12-21 12:43:00,710 INFO     ___FILE_ONLY___  
+2016-12-21 12:43:00,710 INFO     ___FILE_ONLY___ 0
+2016-12-21 12:43:00,710 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,710 INFO     ___FILE_ONLY___   
+2016-12-21 12:43:00,710 INFO     ___FILE_ONLY___ creatingWithoutRetries
+2016-12-21 12:43:00,711 INFO     ___FILE_ONLY___ :
+2016-12-21 12:43:00,711 INFO     ___FILE_ONLY___  
+2016-12-21 12:43:00,711 INFO     ___FILE_ONLY___ 0
+2016-12-21 12:43:00,711 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,711 INFO     ___FILE_ONLY___   
+2016-12-21 12:43:00,711 INFO     ___FILE_ONLY___ deleting
+2016-12-21 12:43:00,711 INFO     ___FILE_ONLY___ :
+2016-12-21 12:43:00,711 INFO     ___FILE_ONLY___  
+2016-12-21 12:43:00,711 INFO     ___FILE_ONLY___ 1
+2016-12-21 12:43:00,711 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,711 INFO     ___FILE_ONLY___   
+2016-12-21 12:43:00,711 INFO     ___FILE_ONLY___ none
+2016-12-21 12:43:00,711 INFO     ___FILE_ONLY___ :
+2016-12-21 12:43:00,712 INFO     ___FILE_ONLY___  
+2016-12-21 12:43:00,712 INFO     ___FILE_ONLY___ 1
+2016-12-21 12:43:00,712 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,712 INFO     ___FILE_ONLY___   
+2016-12-21 12:43:00,712 INFO     ___FILE_ONLY___ recreating
+2016-12-21 12:43:00,712 INFO     ___FILE_ONLY___ :
+2016-12-21 12:43:00,712 INFO     ___FILE_ONLY___  
+2016-12-21 12:43:00,712 INFO     ___FILE_ONLY___ 0
+2016-12-21 12:43:00,712 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,712 INFO     ___FILE_ONLY___   
+2016-12-21 12:43:00,712 INFO     ___FILE_ONLY___ refreshing
+2016-12-21 12:43:00,712 INFO     ___FILE_ONLY___ :
+2016-12-21 12:43:00,712 INFO     ___FILE_ONLY___  
+2016-12-21 12:43:00,713 INFO     ___FILE_ONLY___ 0
+2016-12-21 12:43:00,713 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,713 INFO     ___FILE_ONLY___   
+2016-12-21 12:43:00,713 INFO     ___FILE_ONLY___ restarting
+2016-12-21 12:43:00,713 INFO     ___FILE_ONLY___ :
+2016-12-21 12:43:00,713 INFO     ___FILE_ONLY___  
+2016-12-21 12:43:00,713 INFO     ___FILE_ONLY___ 0
+2016-12-21 12:43:00,713 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,713 INFO     ___FILE_ONLY___ fingerprint
+2016-12-21 12:43:00,713 INFO     ___FILE_ONLY___ :
+2016-12-21 12:43:00,713 INFO     ___FILE_ONLY___  
+2016-12-21 12:43:00,713 INFO     ___FILE_ONLY___ EIxqlN3uw4E=
+2016-12-21 12:43:00,713 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,714 INFO     ___FILE_ONLY___ id
+2016-12-21 12:43:00,714 INFO     ___FILE_ONLY___ :
+2016-12-21 12:43:00,714 INFO     ___FILE_ONLY___  '
+2016-12-21 12:43:00,714 INFO     ___FILE_ONLY___ 5138507795845868337
+2016-12-21 12:43:00,714 INFO     ___FILE_ONLY___ '
+2016-12-21 12:43:00,714 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,714 INFO     ___FILE_ONLY___ instanceGroup
+2016-12-21 12:43:00,714 INFO     ___FILE_ONLY___ :
+2016-12-21 12:43:00,714 INFO     ___FILE_ONLY___  
+2016-12-21 12:43:00,714 INFO     ___FILE_ONLY___ instance-group-worker-v5
+2016-12-21 12:43:00,714 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,715 INFO     ___FILE_ONLY___ instanceTemplate
+2016-12-21 12:43:00,715 INFO     ___FILE_ONLY___ :
+2016-12-21 12:43:00,715 INFO     ___FILE_ONLY___  
+2016-12-21 12:43:00,715 INFO     ___FILE_ONLY___ instance-template-worker-v5
+2016-12-21 12:43:00,715 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,715 INFO     ___FILE_ONLY___ kind
+2016-12-21 12:43:00,715 INFO     ___FILE_ONLY___ :
+2016-12-21 12:43:00,715 INFO     ___FILE_ONLY___  
+2016-12-21 12:43:00,715 INFO     ___FILE_ONLY___ compute#instanceGroupManager
+2016-12-21 12:43:00,715 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,715 INFO     ___FILE_ONLY___ name
+2016-12-21 12:43:00,715 INFO     ___FILE_ONLY___ :
+2016-12-21 12:43:00,716 INFO     ___FILE_ONLY___  
+2016-12-21 12:43:00,716 INFO     ___FILE_ONLY___ instance-group-worker-v5
+2016-12-21 12:43:00,716 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,716 INFO     ___FILE_ONLY___ selfLink
+2016-12-21 12:43:00,716 INFO     ___FILE_ONLY___ :
+2016-12-21 12:43:00,716 INFO     ___FILE_ONLY___  
+2016-12-21 12:43:00,716 INFO     ___FILE_ONLY___ https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c/instanceGroupManagers/instance-group-worker-v5
+2016-12-21 12:43:00,716 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,716 INFO     ___FILE_ONLY___ targetSize
+2016-12-21 12:43:00,716 INFO     ___FILE_ONLY___ :
+2016-12-21 12:43:00,716 INFO     ___FILE_ONLY___  
+2016-12-21 12:43:00,717 INFO     ___FILE_ONLY___ 1
+2016-12-21 12:43:00,717 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,717 INFO     ___FILE_ONLY___ zone
+2016-12-21 12:43:00,717 INFO     ___FILE_ONLY___ :
+2016-12-21 12:43:00,717 INFO     ___FILE_ONLY___  
+2016-12-21 12:43:00,717 INFO     ___FILE_ONLY___ europe-west1-c
+2016-12-21 12:43:00,717 INFO     ___FILE_ONLY___ 
+
+2016-12-21 12:43:00,748 DEBUG    root            Metrics reporting process started...

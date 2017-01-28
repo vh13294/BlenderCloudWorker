@@ -1,0 +1,48 @@
+2017-01-05 23:45:11,476 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2017-01-05 23:45:11,493 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2017-01-05 23:45:11,497 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2017-01-05 23:45:11,527 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'delete_instances']
+2017-01-05 23:45:11,531 DEBUG    root            Running gcloud.compute.instance-groups.managed.delete-instances with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.compute.instance-groups.managed.delete-instances', usage=None, description='Delete instances managed by managed instance group.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, authority_selector=None, authorization_token_file=None, calliope_command=<googlecloudsdk.calliope.backend.Command object at 0x7f23d65e6c90>, command_path=['gcloud', 'compute', 'instance-groups', 'managed', 'delete-instances'], configuration=None, credential_file_override=None, document=None, flatten=None, format=None, h=None, help=None, http_timeout=None, instances=['blender-worker1'], log_http=None, name='instance-group-worker-v5', project=None, quiet=None, region=None, trace_email=None, trace_log=None, trace_token=None, user_output_enabled=None, verbosity='warning', version=None, zone='europe-west1-c').
+2017-01-05 23:45:11,583 DEBUG    root            Starting batch request...
+2017-01-05 23:45:11,583 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.InstanceGroupManagersService object at 0x7f23d62750d0>, 'DeleteInstances', <ComputeInstanceGroupManagersDeleteInstancesRequest
+ instanceGroupManager: 'instance-group-worker-v5'
+ instanceGroupManagersDeleteInstancesRequest: <InstanceGroupManagersDeleteInstancesRequest
+ instances: ['https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c/instances/blender-worker1']>
+ project: 'corded-keel-151213'
+ zone: 'europe-west1-c'>)
+2017-01-05 23:45:11,584 DEBUG    root            Making batch request...
+2017-01-05 23:45:11,958 DEBUG    root            Error response: HttpError accessing <https://www.googleapis.com/batch>: response: <{'status': '400', 'Content-Length': '559', 'Expires': 'Thu, 05 Jan 2017 23:45:11 GMT', 'Cache-Control': 'private, max-age=0', 'Date': 'Thu, 05 Jan 2017 23:45:11 GMT', 'Content-Type': 'application/json; charset=UTF-8'}>, content <{
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "memberNotFound",
+    "message": "Resource 'projects/corded-keel-151213/zones/europe-west1-c/instances/blender-worker1' is not a member of 'projects/corded-keel-151213/zones/europe-west1-c/instanceGroupManagers/instance-group-worker-v5'."
+   }
+  ],
+  "code": 400,
+  "message": "Resource 'projects/corded-keel-151213/zones/europe-west1-c/instances/blender-worker1' is not a member of 'projects/corded-keel-151213/zones/europe-west1-c/instanceGroupManagers/instance-group-worker-v5'."
+ }
+}
+>
+2017-01-05 23:45:11,959 DEBUG    root            Batch request done; responses [None]
+2017-01-05 23:45:11,959 DEBUG    root            (gcloud.compute.instance-groups.managed.delete-instances) Some requests did not succeed:
+ - Resource 'projects/corded-keel-151213/zones/europe-west1-c/instances/blender-worker1' is not a member of 'projects/corded-keel-151213/zones/europe-west1-c/instanceGroupManagers/instance-group-worker-v5'.
+Traceback (most recent call last):
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 740, in Execute
+    resources = args.calliope_command.Run(cli=self, args=args)
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 1684, in Run
+    resources = command_instance.Run(args)
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/base_classes.py", line 1056, in Run
+    utils.RaiseToolException(errors)
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 118, in RaiseToolException
+    RaiseException(problems, calliope_exceptions.ToolException, error_message)
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 130, in RaiseException
+    errors))
+ToolException: Some requests did not succeed:
+ - Resource 'projects/corded-keel-151213/zones/europe-west1-c/instances/blender-worker1' is not a member of 'projects/corded-keel-151213/zones/europe-west1-c/instanceGroupManagers/instance-group-worker-v5'.
+
+2017-01-05 23:45:12,015 ERROR    root            (gcloud.compute.instance-groups.managed.delete-instances) Some requests did not succeed:
+ - Resource 'projects/corded-keel-151213/zones/europe-west1-c/instances/blender-worker1' is not a member of 'projects/corded-keel-151213/zones/europe-west1-c/instanceGroupManagers/instance-group-worker-v5'.
+
+2017-01-05 23:45:12,022 DEBUG    root            Metrics reporting process started...

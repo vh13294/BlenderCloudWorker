@@ -1,0 +1,17 @@
+{
+  "root": "/home/projectcloudbristol/.forever",
+  "pidPath": "/home/projectcloudbristol/.forever/pids",
+  "sockPath": "/home/projectcloudbristol/.forever/sock",
+  "loglength": 100,
+  "logstream": false,
+  "columns": [
+    "uid",
+    "command",
+    "script",
+    "forever",
+    "pid",
+    "id",
+    "logfile",
+    "uptime"
+  ]
+}

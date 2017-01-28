@@ -1,0 +1,1 @@
+loopback-connector-sqlite3 must be installed to use the sql backend. Use the --json-file-db option if you are unable to install loopback-connector-sqlite3. Error encountered while trying to upgrade: [ Cannot find module '/usr/lib/node_modules/strongloop/node_modules/sqlite3/lib/binding/node-v48-linux-x64/node_sqlite3.node' ]

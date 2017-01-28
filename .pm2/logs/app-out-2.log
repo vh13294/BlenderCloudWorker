@@ -1,0 +1,41 @@
+Invalid Status Code Returned: 500
+[0mGET / [36m304 [0m1383.551 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m12.650 ms - -[0m
+[0mGET / [36m304 [0m98.721 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.640 ms - -[0m
+[0mGET / [32m200 [0m141.037 ms - 170[0m
+[0mGET /stylesheets/style.css [32m200 [0m15.884 ms - 111[0m
+[0mGET /favicon.ico [33m404 [0m105.781 ms - 1215[0m
+[0mGET / [36m304 [0m75.552 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.349 ms - -[0m
+Invalid Status Code Returned: 500
+[0mGET / [36m304 [0m1288.333 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m6.283 ms - -[0m
+[0mGET / [36m304 [0m134.327 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.577 ms - -[0m
+[0mGET / [36m304 [0m135.684 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.614 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m20.182 ms - -[0m
+[0mGET /machine_ready [33m404 [0m252.662 ms - 1215[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.828 ms - -[0m
+Invalid Status Code Returned: 500
+[0mGET / [36m304 [0m1127.820 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.556 ms - -[0m
+[0mGET / [36m304 [0m112.361 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.421 ms - -[0m
+[0mGET /test [0m- [0m- ms - -[0m
+[0mGET / [36m304 [0m185.801 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m5.058 ms - -[0m
+[0mGET / [36m304 [0m122.109 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.410 ms - -[0m
+Invalid Status Code Returned: 500
+[0mGET / [36m304 [0m924.550 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.583 ms - -[0m
+done
+Invalid Status Code Returned: 500
+[0mGET / [36m304 [0m1343.031 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m13.344 ms - -[0m
+Invalid Status Code Returned: 500
+[0mGET / [36m304 [0m1323.823 ms - -[0m
+[0mGET / [32m200 [0m180.744 ms - 170[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.461 ms - -[0m

@@ -1,0 +1,597 @@
+2016-12-19 11:56:30,225 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2016-12-19 11:56:30,227 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'update']
+2016-12-19 11:56:30,229 DEBUG    root            Running gcloud.components.update with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.components.update', usage=None, description='Ensure that the latest version of all installed components is installed on the\nlocal workstation.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, allow_no_backup=False, architecture_override=None, authority_selector=None, authorization_token_file=None, cmd_func=<bound method Command.Run of <googlecloudsdk.calliope.backend.Command object at 0x7fe8d4a39e90>>, command_path=['gcloud', 'components', 'update'], component_ids=[], configuration=None, credential_file_override=None, document=None, format=None, h=None, help=None, http_timeout=None, log_http=None, operating_system_override=None, project=None, quiet=None, sdk_root_override=None, snapshot_url_override=None, trace_email=None, trace_log=None, trace_token=None, user_output_enabled=None, verbosity=None, version=None).
+2016-12-19 11:56:30,280 INFO     ___FILE_ONLY___ 
+
+2016-12-19 11:56:30,281 INFO     ___FILE_ONLY___ 
+Your current Cloud SDK version is: 111.0.0
+
+2016-12-19 11:56:30,281 INFO     ___FILE_ONLY___ You will be upgraded to version: 138.0.0
+
+2016-12-19 11:56:30,281 INFO     ___FILE_ONLY___ 
+
+2016-12-19 11:56:30,286 INFO     ___FILE_ONLY___ ┌─────────────────────────────────────────────────────────────────────┐
+2016-12-19 11:56:30,286 INFO     ___FILE_ONLY___ 
+
+2016-12-19 11:56:30,286 INFO     ___FILE_ONLY___ │                  These components will be updated.                  │
+2016-12-19 11:56:30,286 INFO     ___FILE_ONLY___ 
+
+2016-12-19 11:56:30,286 INFO     ___FILE_ONLY___ ├──────────────────────────────────────────────┬────────────┬─────────┤
+2016-12-19 11:56:30,286 INFO     ___FILE_ONLY___ 
+
+2016-12-19 11:56:30,287 INFO     ___FILE_ONLY___ │                     Name                     │  Version   │   Size  │
+2016-12-19 11:56:30,287 INFO     ___FILE_ONLY___ 
+
+2016-12-19 11:56:30,287 INFO     ___FILE_ONLY___ ├──────────────────────────────────────────────┼────────────┼─────────┤
+2016-12-19 11:56:30,287 INFO     ___FILE_ONLY___ 
+
+2016-12-19 11:56:30,287 INFO     ___FILE_ONLY___ │ 
+2016-12-19 11:56:30,287 INFO     ___FILE_ONLY___ BigQuery Command Line Tool                  
+2016-12-19 11:56:30,287 INFO     ___FILE_ONLY___  
+2016-12-19 11:56:30,288 INFO     ___FILE_ONLY___ │ 
+2016-12-19 11:56:30,288 INFO     ___FILE_ONLY___     2.0.24
+2016-12-19 11:56:30,288 INFO     ___FILE_ONLY___  
+2016-12-19 11:56:30,288 INFO     ___FILE_ONLY___ │ 
+2016-12-19 11:56:30,288 INFO     ___FILE_ONLY___ < 1 MiB
+2016-12-19 11:56:30,288 INFO     ___FILE_ONLY___  
+2016-12-19 11:56:30,288 INFO     ___FILE_ONLY___ │
+2016-12-19 11:56:30,288 INFO     ___FILE_ONLY___ 
+
+2016-12-19 11:56:30,289 INFO     ___FILE_ONLY___ │ 
+2016-12-19 11:56:30,289 INFO     ___FILE_ONLY___ Cloud SDK Core Libraries                    
+2016-12-19 11:56:30,289 INFO     ___FILE_ONLY___  
+2016-12-19 11:56:30,289 INFO     ___FILE_ONLY___ │ 
+2016-12-19 11:56:30,289 INFO     ___FILE_ONLY___ 2016.12.09
+2016-12-19 11:56:30,289 INFO     ___FILE_ONLY___  
+2016-12-19 11:56:30,289 INFO     ___FILE_ONLY___ │ 
+2016-12-19 11:56:30,290 INFO     ___FILE_ONLY___ 5.2 MiB
+2016-12-19 11:56:30,290 INFO     ___FILE_ONLY___  
+2016-12-19 11:56:30,290 INFO     ___FILE_ONLY___ │
+2016-12-19 11:56:30,290 INFO     ___FILE_ONLY___ 
+
+2016-12-19 11:56:30,290 INFO     ___FILE_ONLY___ │ 
+2016-12-19 11:56:30,290 INFO     ___FILE_ONLY___ Cloud SDK Core Libraries (Platform Specific)
+2016-12-19 11:56:30,290 INFO     ___FILE_ONLY___  
+2016-12-19 11:56:30,290 INFO     ___FILE_ONLY___ │ 
+2016-12-19 11:56:30,291 INFO     ___FILE_ONLY___ 2016.11.07
+2016-12-19 11:56:30,291 INFO     ___FILE_ONLY___  
+2016-12-19 11:56:30,291 INFO     ___FILE_ONLY___ │ 
+2016-12-19 11:56:30,291 INFO     ___FILE_ONLY___ < 1 MiB
+2016-12-19 11:56:30,291 INFO     ___FILE_ONLY___  
+2016-12-19 11:56:30,291 INFO     ___FILE_ONLY___ │
+2016-12-19 11:56:30,291 INFO     ___FILE_ONLY___ 
+
+2016-12-19 11:56:30,292 INFO     ___FILE_ONLY___ │ 
+2016-12-19 11:56:30,292 INFO     ___FILE_ONLY___ Cloud Storage Command Line Tool             
+2016-12-19 11:56:30,292 INFO     ___FILE_ONLY___  
+2016-12-19 11:56:30,292 INFO     ___FILE_ONLY___ │ 
+2016-12-19 11:56:30,292 INFO     ___FILE_ONLY___       4.22
+2016-12-19 11:56:30,292 INFO     ___FILE_ONLY___  
+2016-12-19 11:56:30,292 INFO     ___FILE_ONLY___ │ 
+2016-12-19 11:56:30,293 INFO     ___FILE_ONLY___ 2.8 MiB
+2016-12-19 11:56:30,293 INFO     ___FILE_ONLY___  
+2016-12-19 11:56:30,293 INFO     ___FILE_ONLY___ │
+2016-12-19 11:56:30,293 INFO     ___FILE_ONLY___ 
+
+2016-12-19 11:56:30,293 INFO     ___FILE_ONLY___ └──────────────────────────────────────────────┴────────────┴─────────┘
+2016-12-19 11:56:30,293 INFO     ___FILE_ONLY___ 
+
+2016-12-19 11:56:30,294 INFO     ___FILE_ONLY___ 
+
+2016-12-19 11:56:30,314 INFO     ___FILE_ONLY___ A lot has changed since your last upgrade.  For the latest full release notes,
+please visit:
+  https://cloud.google.com/sdk/release_notes
+
+
+2016-12-19 11:56:32,885 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2016-12-19 11:56:32,885 INFO     ___FILE_ONLY___ ╠═ Creating update staging area                             ═╣
+
+2016-12-19 11:56:32,885 INFO     ___FILE_ONLY___ ╚
+2016-12-19 11:56:32,885 INFO     ___FILE_ONLY___ ══════
+2016-12-19 11:56:32,886 INFO     ___FILE_ONLY___ ══════
+2016-12-19 11:56:32,886 INFO     ___FILE_ONLY___ ══════
+2016-12-19 11:56:32,960 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:32,998 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:33,121 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:33,350 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:33,476 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:33,598 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:33,678 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:33,786 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:33,925 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:34,035 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:34,200 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:34,471 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:34,636 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:34,816 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:34,974 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:35,205 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:35,308 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:35,751 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:35,885 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:36,037 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:36,145 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:36,294 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:36,424 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:36,515 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:36,619 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:36,745 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:36,941 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:37,004 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:37,188 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:37,545 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:37,715 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:37,935 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:38,114 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:38,358 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:38,572 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:38,742 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:38,861 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,006 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,174 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,331 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,453 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,517 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,517 INFO     ___FILE_ONLY___ ╝
+2016-12-19 11:56:39,518 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2016-12-19 11:56:39,518 INFO     ___FILE_ONLY___ ╠═ Uninstalling: BigQuery Command Line Tool                 ═╣
+
+2016-12-19 11:56:39,518 INFO     ___FILE_ONLY___ ╚
+2016-12-19 11:56:39,518 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,519 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,519 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,519 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,519 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,520 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,520 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,520 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,520 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,520 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,520 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,521 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,521 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,521 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,521 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,522 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,522 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,522 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,522 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,522 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,523 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,523 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,523 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,523 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,523 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,524 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,524 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,524 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,524 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,525 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,525 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,525 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,525 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,525 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,526 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,526 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,526 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,526 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,526 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,527 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,527 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,527 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,527 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,527 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,528 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,528 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,528 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,528 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,528 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,529 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,529 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,529 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,529 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,529 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,530 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,530 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,530 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,530 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,531 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,531 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,531 INFO     ___FILE_ONLY___ ╝
+2016-12-19 11:56:39,532 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2016-12-19 11:56:39,532 INFO     ___FILE_ONLY___ ╠═ Uninstalling: Cloud SDK Core Libraries                   ═╣
+
+2016-12-19 11:56:39,532 INFO     ___FILE_ONLY___ ╚
+2016-12-19 11:56:39,534 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,535 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,536 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,538 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,539 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,541 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,543 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,544 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,546 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,548 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,549 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,551 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,553 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,555 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,556 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,558 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,560 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,561 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,563 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,565 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,566 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,568 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,569 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,571 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,573 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,575 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,577 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,578 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,580 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,582 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,584 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,586 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,588 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,589 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,591 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,593 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,595 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,596 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,598 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,599 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,601 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,602 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,604 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,606 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,608 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,609 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,611 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,612 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,614 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,616 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,617 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,619 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,620 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,622 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,623 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,625 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,627 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,628 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,630 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,631 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,631 INFO     ___FILE_ONLY___ ╝
+2016-12-19 11:56:39,646 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2016-12-19 11:56:39,646 INFO     ___FILE_ONLY___ ╠═ Uninstalling: Cloud SDK Core Libraries (Platform Spec... ═╣
+
+2016-12-19 11:56:39,646 INFO     ___FILE_ONLY___ ╚
+2016-12-19 11:56:39,647 INFO     ___FILE_ONLY___ ════════════════════
+2016-12-19 11:56:39,647 INFO     ___FILE_ONLY___ ════════════════════
+2016-12-19 11:56:39,647 INFO     ___FILE_ONLY___ ════════════════════
+2016-12-19 11:56:39,647 INFO     ___FILE_ONLY___ ╝
+2016-12-19 11:56:39,647 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2016-12-19 11:56:39,647 INFO     ___FILE_ONLY___ ╠═ Uninstalling: Cloud Storage Command Line Tool            ═╣
+
+2016-12-19 11:56:39,648 INFO     ___FILE_ONLY___ ╚
+2016-12-19 11:56:39,649 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,651 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,652 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,653 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,655 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,656 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,657 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,658 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,659 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,660 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,662 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,663 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,664 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,665 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,666 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,667 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,669 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,670 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,671 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,672 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,674 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,675 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,676 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,677 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,679 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,680 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,681 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,683 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,684 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,685 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,686 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,687 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,688 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,690 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,691 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,692 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,693 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,695 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,696 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,697 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,698 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,699 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,700 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,702 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,703 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,704 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,705 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,706 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,707 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,708 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,709 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,711 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,712 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,713 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,714 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,715 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,716 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,717 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,718 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,719 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,719 INFO     ___FILE_ONLY___ ╝
+2016-12-19 11:56:39,728 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2016-12-19 11:56:39,729 INFO     ___FILE_ONLY___ ╠═ Installing: BigQuery Command Line Tool                   ═╣
+
+2016-12-19 11:56:39,729 INFO     ___FILE_ONLY___ ╚
+2016-12-19 11:56:39,744 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,744 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,744 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,745 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,745 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,745 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,746 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,746 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,746 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,746 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,747 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,747 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,747 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,748 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,748 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,748 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,748 INFO     ___FILE_ONLY___ ══
+2016-12-19 11:56:39,748 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,749 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,749 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,749 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,749 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,750 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,750 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,750 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,751 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,751 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,751 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,751 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,779 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,782 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,783 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,785 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,786 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,787 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,789 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,790 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,792 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,793 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,796 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,798 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,799 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,800 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,801 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,802 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,804 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,804 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,806 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,807 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,808 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,809 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,810 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,811 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,813 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,814 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,815 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,816 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,818 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,819 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,819 INFO     ___FILE_ONLY___ ╝
+2016-12-19 11:56:39,827 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2016-12-19 11:56:39,827 INFO     ___FILE_ONLY___ ╠═ Installing: Cloud SDK Core Libraries                     ═╣
+
+2016-12-19 11:56:39,827 INFO     ___FILE_ONLY___ ╚
+2016-12-19 11:56:39,847 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,850 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,853 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,855 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,857 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,858 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,859 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,860 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,861 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,863 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,864 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,865 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,867 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,868 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,869 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,870 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,871 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,872 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,873 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,874 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,875 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,876 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,877 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,878 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,879 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,879 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,880 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,881 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,882 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:39,883 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,298 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,319 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,342 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,362 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,387 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,404 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,420 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,451 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,470 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,488 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,504 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,521 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,535 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,551 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,572 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,621 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,656 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,677 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,704 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,720 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,735 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,748 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,763 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,776 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,790 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,803 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,816 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,830 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,843 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,857 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,857 INFO     ___FILE_ONLY___ ╝
+2016-12-19 11:56:40,869 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2016-12-19 11:56:40,869 INFO     ___FILE_ONLY___ ╠═ Installing: Cloud SDK Core Libraries (Platform Specific) ═╣
+
+2016-12-19 11:56:40,869 INFO     ___FILE_ONLY___ ╚
+2016-12-19 11:56:40,881 INFO     ___FILE_ONLY___ ══════════════════════════════
+2016-12-19 11:56:40,882 INFO     ___FILE_ONLY___ ══════════
+2016-12-19 11:56:40,882 INFO     ___FILE_ONLY___ ═════════
+2016-12-19 11:56:40,883 INFO     ___FILE_ONLY___ ═══════════
+2016-12-19 11:56:40,883 INFO     ___FILE_ONLY___ ╝
+2016-12-19 11:56:40,890 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2016-12-19 11:56:40,890 INFO     ___FILE_ONLY___ ╠═ Installing: Cloud Storage Command Line Tool              ═╣
+
+2016-12-19 11:56:40,891 INFO     ___FILE_ONLY___ ╚
+2016-12-19 11:56:40,909 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,910 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,912 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,913 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,913 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,918 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,919 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,920 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,922 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,925 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,926 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,927 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,928 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,928 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,929 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,929 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,930 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,930 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,931 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,931 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,932 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,932 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,932 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,933 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,933 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,934 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,934 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,935 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,935 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:40,936 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,178 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,196 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,212 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,223 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,232 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,245 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,258 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,272 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,283 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,294 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,308 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,321 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,337 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,349 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,359 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,369 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,378 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,386 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,394 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,403 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,414 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,423 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,436 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,446 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,455 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,464 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,477 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,488 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,499 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,510 INFO     ___FILE_ONLY___ ═
+2016-12-19 11:56:41,511 INFO     ___FILE_ONLY___ ╝
+2016-12-19 11:56:41,522 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2016-12-19 11:56:41,522 INFO     ___FILE_ONLY___ ╠═ Creating backup and activating new installation          ═╣
+
+2016-12-19 11:56:41,522 INFO     ___FILE_ONLY___ ╚
+2016-12-19 11:56:41,523 DEBUG    root            Attempting to move directory [/usr/lib/google-cloud-sdk] to [/usr/lib/google-cloud-sdk.staging/.install/.backup]
+2016-12-19 11:56:41,523 INFO     ___FILE_ONLY___ ══════════════════════════════
+2016-12-19 11:56:41,523 DEBUG    root            Attempting to move directory [/usr/lib/google-cloud-sdk.staging] to [/usr/lib/google-cloud-sdk]
+2016-12-19 11:56:41,523 INFO     ___FILE_ONLY___ ══════════════════════════════
+2016-12-19 11:56:41,523 INFO     ___FILE_ONLY___ ╝
+
+2016-12-19 11:56:41,550 DEBUG    root            Updating notification cache...
+2016-12-19 11:56:41,551 INFO     ___FILE_ONLY___ 
+
+2016-12-19 11:56:41,551 INFO     ___FILE_ONLY___ Performing post processing steps...
+2016-12-19 11:56:41,551 DEBUG    root            Executing command: ['/usr/bin/python2', '-S', u'/usr/lib/google-cloud-sdk/lib/gcloud.py', u'components', u'post-process']
+2016-12-19 11:56:49,880 DEBUG    ___FILE_ONLY___ Compiling platform/gsutil/third_party/httplib2/python3/httplib2/__init__.py ...
+  File "platform/gsutil/third_party/httplib2/python3/httplib2/__init__.py", line 347
+    print('%s:' % h, end=' ', file=self._fp)
+                        ^
+SyntaxError: invalid syntax
+
+
+2016-12-19 11:56:49,880 DEBUG    ___FILE_ONLY___ 
+2016-12-19 11:56:49,880 INFO     ___FILE_ONLY___ 
+Start a new shell for the changes to take effect.
+
+
+2016-12-19 11:56:49,881 INFO     ___FILE_ONLY___ 
+Update done!
+
+
+2016-12-19 11:56:49,881 INFO     ___FILE_ONLY___ To revert your SDK to the previously installed version, you may run:
+  $ gcloud components update --version 111.0.0
+
+
+2016-12-19 11:56:49,882 WARNING  root            There are older versions of Google Cloud Platform tools on your system PATH.
+Please remove the following to avoid accidentally invoking these old tools:
+
+/usr/bin/git-credential-gcloud.sh
+/usr/bin/bq
+/usr/bin/gcloud
+/usr/bin/gsutil
+
+
+2016-12-19 11:56:49,884 INFO     root            Display format "none".
+2016-12-19 11:56:50,074 DEBUG    root            Metrics reporting process started...

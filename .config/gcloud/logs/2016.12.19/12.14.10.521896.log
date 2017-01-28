@@ -1,0 +1,374 @@
+2016-12-19 12:14:10,524 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2016-12-19 12:14:10,526 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2016-12-19 12:14:10,561 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'describe']
+2016-12-19 12:14:10,566 DEBUG    root            Running gcloud.compute.instances.describe with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.compute.instances.describe', usage=None, description='Describe a virtual machine instance.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, authority_selector=None, authorization_token_file=None, calliope_command=<googlecloudsdk.calliope.backend.Command object at 0x7f906f638790>, command_path=['gcloud', 'compute', 'instances', 'describe'], configuration=None, credential_file_override=None, document=None, flatten=None, format=None, h=None, help=None, http_timeout=None, log_http=None, name='blender-worker1', project=None, quiet=None, trace_email=None, trace_log=None, trace_token=None, user_output_enabled=None, verbosity='warning', version=None, zone='europe-west1-c').
+2016-12-19 12:14:10,651 DEBUG    root            Starting batch request...
+2016-12-19 12:14:10,651 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.InstancesService object at 0x7f906f2071d0>, 'Get', <ComputeInstancesGetRequest
+ instance: 'blender-worker1'
+ project: 'corded-keel-151213'
+ zone: 'europe-west1-c'>)
+2016-12-19 12:14:10,652 DEBUG    root            Making batch request...
+2016-12-19 12:14:10,888 DEBUG    root            Batch request done; responses [<Instance
+ canIpForward: False
+ cpuPlatform: u'Intel Ivy Bridge'
+ creationTimestamp: u'2016-12-01T05:42:56.966-08:00'
+ description: u''
+ disks: [<AttachedDisk
+ autoDelete: True
+ boot: True
+ deviceName: u'blender-worker1'
+ index: 0
+ interface: InterfaceValueValuesEnum(SCSI, 1)
+ kind: u'compute#attachedDisk'
+ licenses: [u'https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/licenses/ubuntu-1404-trusty']
+ mode: ModeValueValuesEnum(READ_WRITE, 1)
+ source: u'https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c/disks/blender-worker1'
+ type: TypeValueValuesEnum(PERSISTENT, 0)>]
+ id: 1746518994001434127
+ kind: u'compute#instance'
+ machineType: u'https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c/machineTypes/n1-standard-1'
+ metadata: <Metadata
+ fingerprint: '\x9a\x91\xd3\xcb\xdd\xaf\xd2\xd0'
+ items: []
+ kind: u'compute#metadata'>
+ name: u'blender-worker1'
+ networkInterfaces: [<NetworkInterface
+ accessConfigs: [<AccessConfig
+ kind: u'compute#accessConfig'
+ name: u'External NAT'
+ natIP: u'104.199.25.246'
+ type: TypeValueValuesEnum(ONE_TO_ONE_NAT, 0)>]
+ name: u'nic0'
+ network: u'https://www.googleapis.com/compute/v1/projects/corded-keel-151213/global/networks/default'
+ networkIP: u'10.132.0.3'
+ subnetwork: u'https://www.googleapis.com/compute/v1/projects/corded-keel-151213/regions/europe-west1/subnetworks/default'>]
+ scheduling: <Scheduling
+ automaticRestart: True
+ onHostMaintenance: OnHostMaintenanceValueValuesEnum(MIGRATE, 0)
+ preemptible: False>
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c/instances/blender-worker1'
+ serviceAccounts: [<ServiceAccount
+ email: u'304034796277-compute@developer.gserviceaccount.com'
+ scopes: [u'https://www.googleapis.com/auth/cloud-platform']>]
+ status: StatusValueValuesEnum(RUNNING, 1)
+ tags: <Tags
+ fingerprint: '\xea\xc9\x9c\xe1\x1e\x1d\xdf\xd2'
+ items: [u'http-server', u'https-server']>
+ zone: u'https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c'>]
+2016-12-19 12:14:10,891 INFO     root            Display format "default".
+2016-12-19 12:14:10,892 INFO     ___FILE_ONLY___ canIpForward
+2016-12-19 12:14:10,893 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,893 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,893 INFO     ___FILE_ONLY___ false
+2016-12-19 12:14:10,893 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,893 INFO     ___FILE_ONLY___ cpuPlatform
+2016-12-19 12:14:10,893 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,893 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,893 INFO     ___FILE_ONLY___ Intel
+2016-12-19 12:14:10,893 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,893 INFO     ___FILE_ONLY___ Ivy
+2016-12-19 12:14:10,893 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,894 INFO     ___FILE_ONLY___ Bridge
+2016-12-19 12:14:10,894 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,894 INFO     ___FILE_ONLY___ creationTimestamp
+2016-12-19 12:14:10,894 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,894 INFO     ___FILE_ONLY___  '
+2016-12-19 12:14:10,894 INFO     ___FILE_ONLY___ 2016-12-01T05:42:56.966-08:00
+2016-12-19 12:14:10,894 INFO     ___FILE_ONLY___ '
+2016-12-19 12:14:10,894 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,894 INFO     ___FILE_ONLY___ description
+2016-12-19 12:14:10,895 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,895 INFO     ___FILE_ONLY___  '
+2016-12-19 12:14:10,895 INFO     ___FILE_ONLY___ '
+2016-12-19 12:14:10,895 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,895 INFO     ___FILE_ONLY___ disks
+2016-12-19 12:14:10,895 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,895 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,895 INFO     ___FILE_ONLY___ -
+2016-12-19 12:14:10,895 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,896 INFO     ___FILE_ONLY___ autoDelete
+2016-12-19 12:14:10,896 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,896 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,896 INFO     ___FILE_ONLY___ true
+2016-12-19 12:14:10,896 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,896 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,896 INFO     ___FILE_ONLY___ boot
+2016-12-19 12:14:10,896 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,896 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,896 INFO     ___FILE_ONLY___ true
+2016-12-19 12:14:10,896 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,897 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,897 INFO     ___FILE_ONLY___ deviceName
+2016-12-19 12:14:10,897 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,897 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,897 INFO     ___FILE_ONLY___ blender-worker1
+2016-12-19 12:14:10,897 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,897 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,897 INFO     ___FILE_ONLY___ index
+2016-12-19 12:14:10,897 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,898 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,898 INFO     ___FILE_ONLY___ 0
+2016-12-19 12:14:10,898 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,898 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,898 INFO     ___FILE_ONLY___ interface
+2016-12-19 12:14:10,898 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,898 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,898 INFO     ___FILE_ONLY___ SCSI
+2016-12-19 12:14:10,898 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,899 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,899 INFO     ___FILE_ONLY___ kind
+2016-12-19 12:14:10,899 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,899 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,899 INFO     ___FILE_ONLY___ compute#attachedDisk
+2016-12-19 12:14:10,899 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,899 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,899 INFO     ___FILE_ONLY___ licenses
+2016-12-19 12:14:10,900 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,900 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,900 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,900 INFO     ___FILE_ONLY___ -
+2016-12-19 12:14:10,900 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,900 INFO     ___FILE_ONLY___ https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/licenses/ubuntu-1404-trusty
+2016-12-19 12:14:10,900 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,900 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,900 INFO     ___FILE_ONLY___ mode
+2016-12-19 12:14:10,901 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,901 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,901 INFO     ___FILE_ONLY___ READ_WRITE
+2016-12-19 12:14:10,901 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,901 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,901 INFO     ___FILE_ONLY___ source
+2016-12-19 12:14:10,901 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,901 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,902 INFO     ___FILE_ONLY___ https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c/disks/blender-worker1
+2016-12-19 12:14:10,902 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,902 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,902 INFO     ___FILE_ONLY___ type
+2016-12-19 12:14:10,902 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,902 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,902 INFO     ___FILE_ONLY___ PERSISTENT
+2016-12-19 12:14:10,902 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,903 INFO     ___FILE_ONLY___ id
+2016-12-19 12:14:10,903 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,903 INFO     ___FILE_ONLY___  '
+2016-12-19 12:14:10,903 INFO     ___FILE_ONLY___ 1746518994001434127
+2016-12-19 12:14:10,903 INFO     ___FILE_ONLY___ '
+2016-12-19 12:14:10,903 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,903 INFO     ___FILE_ONLY___ kind
+2016-12-19 12:14:10,903 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,903 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,903 INFO     ___FILE_ONLY___ compute#instance
+2016-12-19 12:14:10,904 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,904 INFO     ___FILE_ONLY___ machineType
+2016-12-19 12:14:10,904 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,904 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,904 INFO     ___FILE_ONLY___ https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c/machineTypes/n1-standard-1
+2016-12-19 12:14:10,904 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,904 INFO     ___FILE_ONLY___ metadata
+2016-12-19 12:14:10,905 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,905 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,905 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,905 INFO     ___FILE_ONLY___ fingerprint
+2016-12-19 12:14:10,905 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,905 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,905 INFO     ___FILE_ONLY___ mpHTy92v0tA=
+2016-12-19 12:14:10,905 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,905 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,906 INFO     ___FILE_ONLY___ kind
+2016-12-19 12:14:10,906 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,906 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,906 INFO     ___FILE_ONLY___ compute#metadata
+2016-12-19 12:14:10,906 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,906 INFO     ___FILE_ONLY___ name
+2016-12-19 12:14:10,906 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,906 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,907 INFO     ___FILE_ONLY___ blender-worker1
+2016-12-19 12:14:10,907 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,907 INFO     ___FILE_ONLY___ networkInterfaces
+2016-12-19 12:14:10,907 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,907 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,907 INFO     ___FILE_ONLY___ -
+2016-12-19 12:14:10,907 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,907 INFO     ___FILE_ONLY___ accessConfigs
+2016-12-19 12:14:10,908 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,908 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,908 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,908 INFO     ___FILE_ONLY___ -
+2016-12-19 12:14:10,908 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,908 INFO     ___FILE_ONLY___ kind
+2016-12-19 12:14:10,908 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,908 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,908 INFO     ___FILE_ONLY___ compute#accessConfig
+2016-12-19 12:14:10,908 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,908 INFO     ___FILE_ONLY___     
+2016-12-19 12:14:10,909 INFO     ___FILE_ONLY___ name
+2016-12-19 12:14:10,909 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,909 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,909 INFO     ___FILE_ONLY___ External
+2016-12-19 12:14:10,909 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,909 INFO     ___FILE_ONLY___ NAT
+2016-12-19 12:14:10,909 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,909 INFO     ___FILE_ONLY___     
+2016-12-19 12:14:10,909 INFO     ___FILE_ONLY___ natIP
+2016-12-19 12:14:10,909 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,910 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,910 INFO     ___FILE_ONLY___ 104.199.25.246
+2016-12-19 12:14:10,910 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,910 INFO     ___FILE_ONLY___     
+2016-12-19 12:14:10,910 INFO     ___FILE_ONLY___ type
+2016-12-19 12:14:10,910 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,910 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,910 INFO     ___FILE_ONLY___ ONE_TO_ONE_NAT
+2016-12-19 12:14:10,910 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,910 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,911 INFO     ___FILE_ONLY___ name
+2016-12-19 12:14:10,911 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,911 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,911 INFO     ___FILE_ONLY___ nic0
+2016-12-19 12:14:10,911 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,911 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,911 INFO     ___FILE_ONLY___ network
+2016-12-19 12:14:10,911 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,911 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,912 INFO     ___FILE_ONLY___ https://www.googleapis.com/compute/v1/projects/corded-keel-151213/global/networks/default
+2016-12-19 12:14:10,912 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,912 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,912 INFO     ___FILE_ONLY___ networkIP
+2016-12-19 12:14:10,912 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,912 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,912 INFO     ___FILE_ONLY___ 10.132.0.3
+2016-12-19 12:14:10,912 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,913 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,913 INFO     ___FILE_ONLY___ subnetwork
+2016-12-19 12:14:10,913 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,913 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,913 INFO     ___FILE_ONLY___ https://www.googleapis.com/compute/v1/projects/corded-keel-151213/regions/europe-west1/subnetworks/default
+2016-12-19 12:14:10,913 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,913 INFO     ___FILE_ONLY___ scheduling
+2016-12-19 12:14:10,913 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,914 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,914 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,914 INFO     ___FILE_ONLY___ automaticRestart
+2016-12-19 12:14:10,914 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,914 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,914 INFO     ___FILE_ONLY___ true
+2016-12-19 12:14:10,914 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,914 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,914 INFO     ___FILE_ONLY___ onHostMaintenance
+2016-12-19 12:14:10,915 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,915 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,915 INFO     ___FILE_ONLY___ MIGRATE
+2016-12-19 12:14:10,915 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,915 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,915 INFO     ___FILE_ONLY___ preemptible
+2016-12-19 12:14:10,915 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,915 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,915 INFO     ___FILE_ONLY___ false
+2016-12-19 12:14:10,915 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,916 INFO     ___FILE_ONLY___ selfLink
+2016-12-19 12:14:10,916 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,916 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,916 INFO     ___FILE_ONLY___ https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c/instances/blender-worker1
+2016-12-19 12:14:10,916 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,916 INFO     ___FILE_ONLY___ serviceAccounts
+2016-12-19 12:14:10,916 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,917 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,917 INFO     ___FILE_ONLY___ -
+2016-12-19 12:14:10,917 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,917 INFO     ___FILE_ONLY___ email
+2016-12-19 12:14:10,917 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,917 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,917 INFO     ___FILE_ONLY___ 304034796277-compute@developer.gserviceaccount.com
+2016-12-19 12:14:10,917 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,918 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,918 INFO     ___FILE_ONLY___ scopes
+2016-12-19 12:14:10,918 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,918 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,918 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,918 INFO     ___FILE_ONLY___ -
+2016-12-19 12:14:10,918 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,918 INFO     ___FILE_ONLY___ https://www.googleapis.com/auth/cloud-platform
+2016-12-19 12:14:10,918 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,919 INFO     ___FILE_ONLY___ status
+2016-12-19 12:14:10,919 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,919 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,919 INFO     ___FILE_ONLY___ RUNNING
+2016-12-19 12:14:10,919 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,919 INFO     ___FILE_ONLY___ tags
+2016-12-19 12:14:10,919 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,919 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,920 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,920 INFO     ___FILE_ONLY___ fingerprint
+2016-12-19 12:14:10,920 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,920 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,920 INFO     ___FILE_ONLY___ 6smc4R4d39I=
+2016-12-19 12:14:10,920 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,920 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,920 INFO     ___FILE_ONLY___ items
+2016-12-19 12:14:10,921 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,921 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,921 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,921 INFO     ___FILE_ONLY___ -
+2016-12-19 12:14:10,921 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,921 INFO     ___FILE_ONLY___ http-server
+2016-12-19 12:14:10,921 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,921 INFO     ___FILE_ONLY___   
+2016-12-19 12:14:10,921 INFO     ___FILE_ONLY___ -
+2016-12-19 12:14:10,921 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,922 INFO     ___FILE_ONLY___ https-server
+2016-12-19 12:14:10,922 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,922 INFO     ___FILE_ONLY___ zone
+2016-12-19 12:14:10,922 INFO     ___FILE_ONLY___ :
+2016-12-19 12:14:10,922 INFO     ___FILE_ONLY___  
+2016-12-19 12:14:10,922 INFO     ___FILE_ONLY___ https://www.googleapis.com/compute/v1/projects/corded-keel-151213/zones/europe-west1-c
+2016-12-19 12:14:10,922 INFO     ___FILE_ONLY___ 
+
+2016-12-19 12:14:10,930 DEBUG    root            Metrics reporting process started...

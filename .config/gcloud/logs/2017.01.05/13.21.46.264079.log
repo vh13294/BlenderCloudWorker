@@ -1,0 +1,8 @@
+2017-01-05 13:21:46,266 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2017-01-05 13:21:46,294 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'ssh']
+2017-01-05 13:21:46,298 DEBUG    root            Running gcloud.compute.ssh with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.compute.ssh', usage=None, description='SSH into a virtual machine instance.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, authority_selector=None, authorization_token_file=None, calliope_command=<googlecloudsdk.calliope.backend.Command object at 0x7f399516ad90>, command=None, command_path=['gcloud', 'compute', 'ssh'], configuration=None, container=None, credential_file_override=None, document=None, dry_run=False, flatten=None, force_key_file_overwrite=None, format=None, h=None, help=None, http_timeout=None, log_http=None, plain=False, project=None, quiet=None, ssh_args=[], ssh_flag=None, ssh_key_file=None, strict_host_key_checking=None, trace_email=None, trace_log=None, trace_token=None, user_host='blender-manager', user_output_enabled=None, verbosity='warning', version=None, zone=None).
+2017-01-05 13:21:48,086 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+

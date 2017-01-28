@@ -1,0 +1,45 @@
+2016-12-19 12:04:15,473 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2016-12-19 12:04:15,475 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2016-12-19 12:04:15,507 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'describe']
+2016-12-19 12:04:15,514 DEBUG    root            Running gcloud.compute.instances.describe with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.compute.instances.describe', usage=None, description='Describe a virtual machine instance.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, authority_selector=None, authorization_token_file=None, calliope_command=<googlecloudsdk.calliope.backend.Command object at 0x7f5e5500d790>, command_path=['gcloud', 'compute', 'instances', 'describe'], configuration=None, credential_file_override=None, document=None, flatten=None, format=None, h=None, help=None, http_timeout=None, log_http=None, name='blender-mananger', project=None, quiet=None, trace_email=None, trace_log=None, trace_token=None, user_output_enabled=None, verbosity='warning', version=None, zone=None).
+2016-12-19 12:04:18,081 DEBUG    root            Starting batch request...
+2016-12-19 12:04:18,081 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.InstancesService object at 0x7f5e54cf4610>, 'Get', <ComputeInstancesGetRequest
+ instance: 'blender-mananger'
+ project: 'corded-keel-151213'
+ zone: 'europe-west1-c'>)
+2016-12-19 12:04:18,082 DEBUG    root            Making batch request...
+2016-12-19 12:04:18,325 DEBUG    root            Error response: HttpError accessing <https://www.googleapis.com/batch>: response: <{'status': '404', 'Content-Length': '355', 'Expires': 'Mon, 19 Dec 2016 12:04:18 GMT', 'Cache-Control': 'private, max-age=0', 'Date': 'Mon, 19 Dec 2016 12:04:18 GMT', 'Content-Type': 'application/json; charset=UTF-8'}>, content <{
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "notFound",
+    "message": "The resource 'projects/corded-keel-151213/zones/europe-west1-c/instances/blender-mananger' was not found"
+   }
+  ],
+  "code": 404,
+  "message": "The resource 'projects/corded-keel-151213/zones/europe-west1-c/instances/blender-mananger' was not found"
+ }
+}
+>
+2016-12-19 12:04:18,326 DEBUG    root            Batch request done; responses [None]
+2016-12-19 12:04:18,326 DEBUG    root            (gcloud.compute.instances.describe) Could not fetch resource:
+ - The resource 'projects/corded-keel-151213/zones/europe-west1-c/instances/blender-mananger' was not found
+Traceback (most recent call last):
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 740, in Execute
+    resources = args.calliope_command.Run(cli=self, args=args)
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 1684, in Run
+    resources = command_instance.Run(args)
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/base_classes.py", line 729, in Run
+    error_message='Could not fetch resource:')
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 118, in RaiseToolException
+    RaiseException(problems, calliope_exceptions.ToolException, error_message)
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 130, in RaiseException
+    errors))
+ToolException: Could not fetch resource:
+ - The resource 'projects/corded-keel-151213/zones/europe-west1-c/instances/blender-mananger' was not found
+
+2016-12-19 12:04:18,328 ERROR    root            (gcloud.compute.instances.describe) Could not fetch resource:
+ - The resource 'projects/corded-keel-151213/zones/europe-west1-c/instances/blender-mananger' was not found
+
+2016-12-19 12:04:18,345 DEBUG    root            Metrics reporting process started...

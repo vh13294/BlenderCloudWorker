@@ -1,0 +1,14 @@
+
+> express-worker@0.0.0 start /home/projectcloudbristol/express_worker
+> node ./bin/www
+
+[0mGET / [32m200 [0m274.413 ms - 170[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.015 ms - -[0m
+[0mGET / [36m304 [0m33.569 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.663 ms - -[0m
+[0mGET / [36m304 [0m41.423 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.982 ms - -[0m
+
+> express-worker@0.0.0 start /home/projectcloudbristol/express_worker
+> node ./bin/www
+

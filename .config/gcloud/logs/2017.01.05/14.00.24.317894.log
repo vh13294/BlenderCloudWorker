@@ -1,0 +1,7 @@
+2017-01-05 14:00:24,319 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2017-01-05 14:00:24,321 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2017-01-05 14:00:24,345 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'add_metadata']
+2017-01-05 14:00:24,347 ERROR    root            (gcloud.compute.instances.add-metadata) unrecognized arguments:
+  rm
+  /tmp/ssh-8CmTrIMNHi
+2017-01-05 14:00:24,354 DEBUG    root            Metrics reporting process started...
